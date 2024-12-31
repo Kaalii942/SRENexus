@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Get Started</h1>
+            <p>Please provide the following details about your software project:</p>
+            <form action="submit_form.php" method="POST" id="softwareForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="softwareDescription">How should the software look like?</label>
+                <textarea id="softwareDescription" name="softwareDescription" required></textarea>
+
+                <label for="timeline">Timeline for Development:</label>
+                <input type="text" id="timeline" name="timeline" required>
+
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" required>
+
+                <label for="features">Additional Features (Optional):</label>
+                <textarea id="features" name="features"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Software Requirement Engineering. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
